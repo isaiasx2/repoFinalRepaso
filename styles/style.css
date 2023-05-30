@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Fira+Sans+Condensed:wght@200&family=Outfit&display=swap');
+
+
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  /*1 rem = 10px*/ 
+
+}
+
+
+
+*, *:before, *:after {
+    box-sizing: inherit;  /*hereda las propiedades de su padre*/
+    text-transform: capitalize;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+/* CONTENEDOR PRINCIPAL*/
+
+
+
+.encabezado{
+
+    width: 100%;
+    max-width: 100%;
+    height: 8rem;
+    background-color: #212529;
+    margin-bottom: 5rem ;
+    
+}
+
+.navbar{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar-nav{
+    float: top right;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+
+.icon-carrito{
+    cursor: pointer;
+}
+
+
+.contenedor-principal{
+    max-width: 100vw;
+    height: 100%;
+    max-height: 100%;
+    
+}
+
+.contenedor-grid{
+    margin: 5rem ;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: auto;
+    row-gap: 3.8rem;
+    column-gap: .8rem;
+    
+    max-width: 100%;
+}
+
+
+.tarjeta{
+
+    border: .1rem dotted rgba(0,0, 0, .1);
+    height: 40rem;
+    max-width: auto;
+    padding: .2rem;
+    border-radius: .5rem;
+
+
+}
+.imagen-tarjeta{
+    width: 100%;
+    max-width: 100%;
+    height: 50%;
+    max-height: 50%;
+    padding: 3rem;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all .5s ease;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+
+.imagen-tarjeta:hover{
+
+    transform: scale(1.1);
+
+}
+
+.tarjeta-cuerpo{
+
+    width: 100%;
+    max-width: 100%;
+    height: 50%;
+    max-height: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1.2rem;
+
+
+}
+
+.card-text.desc,.card-text.precio,.card-tex.cant{
+
+    text-align: center;
+
+}
+
+.agregarCarrito{
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+}
+
+.agregarCarrito:hover{
+
+    transform: scale(.97);
+
+}
